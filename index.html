@@ -15,7 +15,7 @@
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic">
     <style type="text/css">
       /* large desktop*/
-      @media (min-width:980px) {
+      @media (min-width: 980px) {
        body {
          padding-top: 60px;
        }  
@@ -26,8 +26,8 @@
          border-left: 1px white solid;
        }
       }
-/* Landscape phones and down */
-@media (max-width: 480px) {
+      /* Landscape phones and down */
+      @media (max-width: 480px) {
   	.copy {
       		padding: 2.5% 10%;
 	}
@@ -37,68 +37,71 @@
      	.linediv-r {
 		border-top: 1px white solid;
 	}
-  }
-     /* All form factors*/
-/* Main body and headings*/
-body {
-	font-family: 'Ubuntu',Helvitica,Arial, sans-serif;
-	text-align:center;
-}
-p.lead {
+       }
+       /* All form factors*/
+       /* Main body and headings*/
+       body {
+	font-family: 'Ubuntu',Helvetica,Arial, sans-serif;
+       }
+       .heading, .subheading {
+        font-family: 'Ubuntu',Helvetica,Arial, sans-serif;
+        text-align: center;
+       }
+       p.lead {
 	padding-top: 1.5%;
   	font-size: 24px:
 	line-height: 30px;
-}
-p {
+       }
+       p {
 	font-size: 18px;
-	line-height:24px;
-} 
-/* Video pitch and action */
-.pitch {
-	padding: 2.5% 0%;
-}
-.order {
-	padding: 2% 0%;
-}
-.actions {
-	background-color: #343434;
-	padding: 3% 0%;
-}
-.video, .thermometer, .order, .social, .statistics {
-	text-align: center;
-}
-.statistics h3, .statistics p {
+	line-height: 24px;
+       } 
+       /* Video pitch and action */
+       .pitch {
+	  padding: 2.5% 0%;
+       }
+       .order {
+	 padding: 2% 0%;
+       }
+       .actions {
+	 background-color: #343434;
+	 padding: 3% 0%;
+       }
+       .video, .thermometer, .order, .social, .statistics {
+       	text-align: center;
+       }
+       .statistics h3, .statistics p {
  	color: white;
-}
+       }
 
-/* Marketing copy and footer */
-.copy {
+       /* Marketing copy and footer */
+       .copy {
 	padding-top: 2.5%;
 	padding-bottom: 2.5%;
 	text-align: justify;
-}
-.asset {
+       }
+       .asset {
 	padding: 2.5% 0%;
-}
-.footer {
+       }
+       .footer {
 	color: #cccccc;
 	text-align:center;
-}
-.footer p {
+       }
+       .footer p {
 	font-size: 11px;
-}
-.footer a {
+       }
+       .footer a {
 	color: #ccccff;
-}
+       }
     </style>
   </head>
   <body>
-<!-- Mobile-friendly navbar adapted from example. -->
+        <!-- Mobile-friendly navbar adapted from example. -->
  	<!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<button type="button" class="btn btw-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -115,33 +118,34 @@ p {
 		</div>
 	</div>
 
-<!-- We use row-fluid inside containers to achieve a resizable layout. -->
-<!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-<!-- http://stackoverflow.com/a/12270322 -->
-<div class="container">
-	<!-- Font and paired font of .heading/ .subheading and body from Google fonts -->
-	<!-- www.google.com/fonts/specimen/Ubuntu -->
-	<!-- www.google.com/fonts/specimen/Ubuntu#pairings-->
-	<div class="row-fluid heading">
+        <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+        <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+        <!-- http://stackoverflow.com/a/12270322 -->
+        
+        <div class="container">
+	   <!-- Font and paired font of .heading/ .subheading and body from Google fonts -->
+	   <!-- www.google.com/fonts/specimen/Ubuntu -->
+	   <!-- www.google.com/fonts/specimen/Ubuntu#pairings-->
+	   <div class="row-fluid heading">
 		<div class="span12">
-			<h1>Product</h1>
+			<h1>Self-Guided Tour Director</h1>
 		</div
-	</div
-	<div class="row-fluid subheading">
+	   </div
+   	   <div class="row-fluid subheading">
 		<div class="span12">
 			<!-- Special typography from Bootstrap for lead paragraph. -->
 			<!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-			<p class="lead">One sentence description.</p>
+			<p class="lead">A mobile application that enables self-guided tourists to enjoy the benefits of an escorted or  guided tour without the costs and inflexibility of guided group tours.</p>
 		</div>
-	</div>
-	<div class="row-fluid pitch">
+	   </div>
+	   <div class="row-fluid pitch">
 		<div class="span5 offset1 video">
 			<img class="img-polaroid" src="http://placehold.it/480x300">
 		</div>
-	</div>
-<!-- We define a new 'actions' div to contain statistics, order and share buttons. -->
-               <div class="span5 actions">
-			<div class="span8 offset2">
+                <!-- We define a new 'actions' div to contain statistics, order and share buttons. -->
+                <div class="span5 actions">
+		     <div class="span8 offset2">
+                        <div class="statistics">
 				<div class="span4">
 					<!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries. -->
 					<div class="linediv-l">
@@ -159,7 +163,7 @@ p {
 					</div>
 				</div>
 			</div>
-		</div>
+		    </div>
 		<div class="span10 offset1">
 			<!-- Bootstrap progress bar -->
 			<!-- http://teitter.github.io/bootstrap/components.html#progress -->
@@ -171,13 +175,13 @@ p {
 		<div class="span6 offset3 order">
 			<!-- Standard Bootstrap button. -->
 			<!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-			<button class="btw btw-success btn-large">Preorder</button>
+			<button class="btn btn-success btn-large">Preorder</button>
 		</div>
 		<div class="span8 offset2 social">
 	  		<!-- Social buttons are not included in default bootstrap -->
 			<!-- http://noizwaves..github.io/bootstrap-social-buttons -->
 			<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter </button>
-			<button class="btu btn-facebook"><i class="icon-facebook"></i> | Facebook </button>
+			<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook </button>
 		</div>
 	</div>
 </div>
@@ -191,7 +195,8 @@ p {
 	</div>
 	<div class="span5 copy">
 		<p>
-			Blah..Blah.Blah…
+                  A self-guided tour is a self-governing tour where one navigates a route oneself as compared to a escorted-tour where the 
+                  tour is managed by a tour director who directs the route, times, information, and places toured. The benefits of an escorted tour are the time saved by the pre-planning and coordination required for a tour as well as access to information that makes the tour enjoyable. Escorted tours are typically organized with large groups making it inflexible.
 		</p>
 	</div>
 </div>
